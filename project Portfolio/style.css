@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -17,9 +18,22 @@ body{
     background-image: url(ims2.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0; /* Ensure overlay is behind header */
+}
+
 .container{
     padding: 4px 4%;
+    position: relative; /* Ensure container stays on top of the overlay */
+    z-index: 1; /* Keep container on top */
 }
 nav{
     display: flex;
@@ -60,6 +74,8 @@ nav ul li a:hover::after{
     margin-top: 90px;
     font-size: 30px;
     margin-right: 10px;
+    position: relative; /* Ensure text stays on top of overlay */
+    z-index: 1; /* Keep text on top */
 }
 .header-text h1{
     margin-top: 30px;
@@ -244,7 +260,10 @@ transform: scale(1.1);
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    position: relative; /* Ensure button stays on top of overlay */
+    z-index: 1; /* Keep button on top */
 }
+
 .btn:hover{
 background: #ff004f;
 }
@@ -375,4 +394,10 @@ nav .x{
     .copyright{
         font-size: 14px;
     }
+}
+.header__text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height:50vh;
 }

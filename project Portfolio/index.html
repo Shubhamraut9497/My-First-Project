@@ -1,299 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="new.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Projects</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark x" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars x" onclick="openmenu()"></i>
-        </nav>
-        <div>
-          <div class="header-text">
-            <p>Full Stack Developer</p>
-            <h1>
-              Hi, I'm <span>Shubham</span><br />
-              From India
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="next.png" class="next" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              I am Shubham Raut. I have Completed my B.tech from Shri Guru
-              Gobind Singhji Institute Of Engineering And Technology Nanded. I
-              am an innovative thinker, initiative taker and multi-dimensional
-              professional with exceptional logical and analytical skills
-              possesses 6 months of hands-on experience in languages like C,
-              C++, JAVA and OOPS and a lot of interest in Data Structure, HTML,
-              CSS, JAVASCRIPT, and React Js is well.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('projects')">Projects</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Computer Language</span><br />C, Java, CSS, HTML,
-                  Javascript
-                </li>
-                <li>
-                  <span>Software Products</span><br />React, Bootstrap, MySql,
-                  JQuery
-                </li>
-                <li>
-                  <span>Additional Courses Taken</span><br />Data Structure
-                </li>
-                <li>
-                  <span>Soft Skills</span><br />
-                  Interpersonal communication, Public speaking, Critical
-                  Thinking
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="projects">
-              <ul>
-                <li>
-                  <span>Linked In Clone-jan 2022</span><br />Features:
-                  Responsive design Functionality to add new post Redux is also
-                  used Tech Stack: HTML , CSS , JAVSCRIPT , REDUX , REACT
-                </li>
-                <li>
-                  <span>Booking.com Clone-feb 2022</span><br />Features: Adding
-                  Hotel section Adding Flights section Register and login Tech
-                  Stack: HTML, CSS, JavaScript, React
-                </li>
-                <li>
-                  <span>E-commerce Website-oct-nov 2022</span><br />features:
-                  use concept of params Add items in Cart Also provide payment
-                  feature Tech Stack: HTML, CSS, JAVASCRIPT, REACT, REDUX
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>B.tech-2019</span><br />Completed My B.tech from Shri
-                  Guru Gobind Singhji Institute Of Engineering And Technology
-                  Nanded
-                </li>
-                <li>
-                  <span>12th-2015</span><br />Completed 12th Education from
-                  Pratibha Niketan College Nanded
-                </li>
-                <li>
-                  <span>10th-2013</span><br />Completed 10th From Jagruti
-                  Vidyalaya Akola
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- --------------services------------ -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Chat Application</h2>
-            <p>
-              With the help of HTML, CSS, JAVASCRIPT,REACT and Firebase tried to
-              build chat application in which user chats is being stored in
-              firestore database
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>Booking website</h2>
-            <p>
-              We can book flight tickets as well as search hotel nearby
-              location. Also login functionality also add .
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>
-              Made a linked in clone in which we can add post also we can like a
-              post also .For storing post i have used backend as a firebase.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ---------------portfolio------------- -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="img4.jpg" width="300px" height="400px" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                One kind of Linked in clone have been made with the help of
-                HTML, CSS, JS, React, and backend as firebase. Also used a sass
-                css which is company oriented css.
-              </p>
-              <a
-                href="https://linked-in-clone-react-7fk2-shubhamraut9497.vercel.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="img2.jpg" width="300px" height="400px" />
-            <div class="layer">
-              <h3>Hotel and Flight Booking</h3>
-              <p>
-                This project is basically based on booking flights tickets and
-                search hotels.
-              </p>
-              <a href="https://booking-clone-react.vercel.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="img3.jpg" width="300px" height="400px" />
-            <div class="layer">
-              <h3>e-Commerce Website</h3>
-              <p>
-                In this project user can search the products, sorts the products
-                according to requirement and also add cart functionality
-              </p>
-              <a href="https://e-commerce-using-react-seven.vercel.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-      </div>
-    </div>
-    <!-- ---------------contact-form--------------- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-envelope"></i>shubhamraut.raut9497@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>9011516694</p>
-            <div class="social-icons">
-              <a href="https://github.com/Shubhamraut9497" target="_blank"
-                ><i class="fa-brands fa-square-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/shubham-raut-6ba327139/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/raut2808/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/shubhamdilipraut.raut"
-                target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://twitter.com/ShubhamDilipRa1" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </div>
-            <a href="resume-shubham-raut.pdf" download class="btn btn2"
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                row="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>2022 Copyright,Inc.All rights reserved.</p>
-      </div>
-    </div>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="overlay"></div>
+    <div class="container">
+      <nav>
+        <img src="new.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="tel:+91 9011516694" style="color:white;text-decoration: none;"><i class="fa-solid fa-phone"
+                style="margin-right:10px"></i>9011516694</a>
+          </li>
+          <i class="fa-solid fa-xmark x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars x" onclick="openmenu()"></i>
+      </nav>
+      <div class="header__text">
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Shubham</span><br />
+            From India
+          </h1>
+          <a href="./resume.pdf" class="btn" style="margin:50px 0px" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="next.png" class="next" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I am Shubham Raut. I have Completed my B.tech from Shri Guru
+            Gobind Singhji Institute Of Engineering And Technology Nanded. I
+            am an innovative thinker, initiative taker and multi-dimensional
+            professional with exceptional logical and analytical skills
+            possesses 6 months of hands-on experience in languages like C,
+            C++, JAVA and OOPS and a lot of interest in Data Structure, HTML,
+            CSS, JAVASCRIPT, and React Js is well.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Computer Language</span><br />C, Java, CSS, HTML,
+                Javascript, PHP, Laravel
+              </li>
+              <li>
+                <span>Software Products</span><br />React, Bootstrap, MySql,
+                JQuery, Wordpress , Woocommerce 
+              </li>
+              <li>
+                <span>Additional Courses Taken</span><br />Data Structure
+              </li>
+              <li>
+                <span>Soft Skills</span><br />
+                Interpersonal communication, Public speaking, Critical
+                Thinking
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="projects">
+            <ul>
+              <li>
+                <span>Linked In Clone-jan 2022</span><br />Features:
+                Responsive design Functionality to add new post Redux is also
+                used Tech Stack: HTML , CSS , JAVSCRIPT , REDUX , REACT
+              </li>
+              <li>
+                <span>Booking.com Clone-feb 2022</span><br />Features: Adding
+                Hotel section Adding Flights section Register and login Tech
+                Stack: HTML, CSS, JavaScript, React
+              </li>
+              <li>
+                <span>E-commerce Website-oct-nov 2022</span><br />features:
+                use concept of params Add items in Cart Also provide payment
+                feature Tech Stack: HTML, CSS, JAVASCRIPT, REACT, REDUX
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>B.tech-2019</span><br />Completed My B.tech from Shri
+                Guru Gobind Singhji Institute Of Engineering And Technology
+                Nanded
+              </li>
+              <li>
+                <span>12th-2015</span><br />Completed 12th Education from
+                Pratibha Niketan College Nanded
+              </li>
+              <li>
+                <span>10th-2013</span><br />Completed 10th From Jagruti
+                Vidyalaya Akola
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------services------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Making Landing Pages </h2>
+          <p>
+            Crafting captivating landing pages is an art form in itself. It's about more than just coding – it's about
+            understanding your audience, conveying your message effectively, and enticing visitors to take action. With
+            a blend of creativity and technical skill, we specialize in building landing pages that not only look
+            stunning but also drive results.
+
+            Our approach begins with thorough research to grasp your brand identity, target audience, and key
+            objectives. We then translate this understanding into visually appealing designs and seamless user
+            experiences. From eye-catching graphics to compelling copywriting, every element is meticulously crafted to
+            engage visitors and encourage conversions.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Making Website</h2>
+          <p>
+
+            Creating a website is more than just putting together a few web pages. It's about crafting a digital
+            experience that resonates with your audience and fulfills their needs. At our agency, we specialize in
+            designing and developing websites that not only look stunning but also deliver seamless functionality and
+            user satisfaction.
+
+            Whether you're looking to book flight tickets, find nearby hotels, or implement user authentication for
+            login functionality, we've got you covered. Our team of skilled developers and designers will work closely
+            with you to understand your requirements and translate them into a user-friendly and visually appealing
+            website.
+
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>SEO Framework</h2>
+          <p>
+            Building a solid SEO framework is essential for ensuring that your website ranks well in search engine
+            results and attracts organic traffic. At our agency, we specialize in developing comprehensive SEO
+            strategies tailored to your business goals and target audience.
+
+            Our approach to SEO begins with a thorough analysis of your website, industry, and competitors. We identify
+            key opportunities and challenges and develop a customized plan to improve your website's visibility and
+            relevance in search engines.
+
+            From on-page optimization to technical audits and link building, we employ a variety of tactics to enhance
+            your website's search engine rankings and drive organic traffic. We stay up-to-date with the latest
+            algorithm updates and best practices to ensure long-term success and sustainability.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------portfolio------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="img4.jpg" width="300px" height="400px" />
+          <div class="layer">
+            <h3>Carkia Website </h3>
+            <p>
+            Design and deployed a full fledged carkia website. In which the major task is to develope the responsive as well as fully functional website using html, css, js and php. After that we have to do seo onto the website 
+            </p>
+            <a href="https://www.carkia.in"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img2.jpg" width="300px" height="400px" />
+          <div class="layer">
+            <h3>Aroma Website </h3>
+            <p>
+              This is basically an e-commerce website we have built it using wordpress.Client actually want the functionality like user can be able to order the scents using whatsapp also and order also. like we have used woocommerce for this 
+            </p>
+            <a href="https://aroma-art.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img3.jpg" width="300px" height="400px" />
+          <div class="layer">
+            <h3>e-Commerce Website</h3>
+            <p>
+              In this project user can search the products, sorts the products
+              according to requirement and also add cart functionality
+            </p>
+            <a href="https://e-commerce-using-react-seven.vercel.app/"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- ---------------contact-form--------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <a href="mailto:shubhamraut.raut9497@gmail.com" style="color:white;text-decoration: none;"><i
+                class="fa-solid fa-envelope"></i>shubhamraut.raut9497@gmail.com</a>
+          </p>
+          <p><a href="tel:+91 9011516694" style="color:white;text-decoration: none;"><i
+                class="fa-solid fa-phone"></i>9011516694</a></p>
+          <div class="social-icons">
+            <a href="https://github.com/Shubhamraut9497" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-raut-6ba327139/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/raut2808/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/shubhamdilipraut.raut" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/ShubhamDilipRa1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="resume-shubham-raut.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>2022 Copyright,Inc.All rights reserved.</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
       }
-    </script>
-    <script>
-      var sidemeu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemeu.style.right = "0";
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
       }
-      function closemenu() {
-        sidemeu.style.right = "-200px";
-      }
-    </script>
-    <script>
-      var subtitle = document.getElementsByClassName("sub-title");
-      for (var i = 0; i < subtitle.length; i++) {
-        subtitle[i].style.color = "blue";
-      }
-    </script>
-  </body>
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemeu.style.right = "0";
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    var subtitle = document.getElementsByClassName("sub-title");
+    for (var i = 0; i < subtitle.length; i++) {
+      subtitle[i].style.color = "blue";
+    }
+  </script>
+</body>
+
 </html>
